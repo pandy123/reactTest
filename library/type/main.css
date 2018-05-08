@@ -1,0 +1,14 @@
+#hearder-user-dropdown-content {
+    margin-left: 10px;
+}
+
+#hearder-titile {
+    font-size: 18px;
+    color: white;
+    float: left;
+}
+
+#hearder-user {
+    width: 150px;
+    float: right;
+}
