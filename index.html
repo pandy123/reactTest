@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<HTML>
+<!-- 页面标题 -->
+
+<HEAD>
+    <!-- 信息定义 -->
+    <META charset="UTF-8">
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <META http-equiv="X-UA-Compatible" content="IE=9;IE=10;IE=Edge,chrome=1" />
+    <META name="referrer" content="origin" />
+    <META name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- 标题定义 -->
+    <TITLE>司空数据定义</TITLE>
+    <!-- 样式定义 -->
+    <!-- <link href="./library/antd.css" type="text/css" rel="stylesheet">
+   <link href="./res/base/css/base.css" type="text/css" rel="stylesheet">
+   <LINK href="./res/base/css/style.css" type="text/css" rel="stylesheet" />
+   <LINK href="./res/editor/css/main.css" type="text/css" rel="stylesheet" />
+   <LINK href="./res/editor/css/control.css" type="text/css" rel="stylesheet" />
+   <LINK href="./res/product.develop/css/icon.css" type="text/css" rel="stylesheet" /> -->
+    <LINK href="./library/type/antd.css" type="text/css" rel="stylesheet" />
+</HEAD>
+<!-- 页面窗体 -->
+
+<BODY onLoad="onStart()">
+
+</BODY>
+<!-- 运行脚本 -->
+<SCRIPT type="text/javascript" src="./config.js"></SCRIPT>
+<!-- <SCRIPT type="text/javascript" src="./library/es6-shim.js"></SCRIPT> -->
+<SCRIPT type="text/javascript" src="./library/require.js"></SCRIPT>
+<SCRIPT type="text/javascript" src="./build/main.js"></SCRIPT>
+<SCRIPT>
+    function onStart() {
+        // 初始化环境
+        initialize();
+        // 加载引用
+        require.config(require_config);
+        require(['jquery', 'react'], function(jquery, react) {
+            require(['main', 'bootstrap'], function(space) {
+                // 启动应用
+                space.startup();
+            })
+        })
+    }
+</SCRIPT>
+
+</HTML>
